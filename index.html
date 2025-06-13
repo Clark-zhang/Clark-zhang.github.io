@@ -1,1 +1,207 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhang Yiquan - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .personal-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .personal-info div {
+            margin-right: 20px;
+        }
+        .job {
+            margin-bottom: 25px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .job-duration {
+            color: #666;
+        }
+        .project {
+            margin-left: 15px;
+            margin-bottom: 20px;
+        }
+        .project-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zhang Yiquan</h1>
+    
+    <div class="section">
+        <h2>Personal Information</h2>
+        <div class="personal-info">
+            <div><strong>Date of Birth:</strong> December 1991</div>
+            <div><strong>GitHub:</strong> <a href="https://github.com/Clark-zhang/" target="_blank">github.com/Clark-zhang</a></div>
+            <div><strong>Tel:</strong> +86 15921011429</div>
+            <div><strong>Email:</strong> 857867503@qq.com</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>
+                <strong>Proficient in RPC:</strong> Contributed patches to the open-source project TarsGo.
+                <ul>
+                    <li>Memory leak fixes: <a href="https://github.com/TarsCloud/TarsGo/pull/145" target="_blank">PR #145</a></li>
+                    <li>Goroutine leak fixes: <a href="https://github.com/TarsCloud/TarsGo/pull/240" target="_blank">PR #240</a></li>
+                </ul>
+            </li>
+            <li><strong>Languages/Frameworks:</strong> Golang, PHP, Redis, MySQL, MQ (Kafka, CMQ)</li>
+            <li><strong>System Architecture:</strong> Knowledge about tracing/monitoring/logging, build stable system with RateLimit and circuit breaker.</li>
+            <li><strong>AI:</strong> Familiar with AI Agent, RAG (Douyin account: "碳基战士")</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Work Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Yuewen Group</span>
+                <span class="job-duration">2017 – 2025 · 8.5 years</span>
+            </div>
+            <div><em>Online literature reading platform with pay-per-chapter/book models.</em></div>
+            <div>Positions: Backend Developer (2017–2021), promoted to R&D Manager (2021–2025), leading 10 client-side and 10 backend engineers.</div>
+            <div>Multiple top-tier performance awards.</div>
+            
+            <div class="project">
+                <div class="project-header">1. Web Novel (2017–2022 · 5 years)</div>
+                <div><em>Overseas literature subscription platform: Authors publish works, platforms sign contracts (revenue-sharing or buyout), and readers pay per chapter.</em></div>
+                <ul>
+                    <li><strong>Achievements:</strong>
+                        <ul>
+                            <li>Built from scratch to 50K DAU. Gateway QPS: 3K.</li>
+                            <li>Independently revamped a PHP forum (Flarum) and migrated backend management systems.</li>
+                            <li>Improved stability by transitioning from PHP-Swoole to TarsGo.</li>
+                            <li>Spearheaded rapid development of 3 apps.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tech Stack:</strong> Middle platform, TarsGo, cloud-native (Tencent Cloud: MySQL, Redis, CMQ, COS, Kafka), Google Analytics, SendGrid, Firebase, AppsFlyer, AppAnnie.</li>
+                    <li><strong>Key Responsibilities:</strong>
+                        <ul>
+                            <li>Ensured system stability, cost control, and on-time delivery.</li>
+                            <li>Aligned technical resources with product roadmaps.</li>
+                            <li>Optimized ROI for technical investments.</li>
+                            <li>Drove iterative improvements through post-release reviews.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">2. Open Platform (2022.05–2023.07, 1 year)</div>
+                <div><em>Partnered with external channels (e.g., WeChat Reading, Pinduoduo, Meituan)</em></div>
+                <div><em>Enabled WeChat Official Accounts for content distribution and revenue-sharing.</em></div>
+                <ul>
+                    <li><strong>Achievements:</strong>
+                        <ul>
+                            <li>Resolved stability and efficiency issues caused by cross-language (PHP/Java) systems.</li>
+                            <li>Introduced HTTP proxy layer in PHP to enable Java developers to support Business-end.</li>
+                            <li>Transitioned PHP team to Golang for Client-end development (QPS 5K).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">3. Qidian Projects (2023.07–2025.05, 2 year)</div>
+                <div><strong>a. Qidian Audio books (2023.07–2024.10, 1year · Gateway QPS 300)</strong></div>
+                <ul>
+                    <li>Partnered with audiobook studios to adapt novels into audio content.</li>
+                    <li>Integrated TTS capabilities (via Middle Platform).</li>
+                    <li>Cleared technical debt and delivered the project within 2 months (4 backend engineers).</li>
+                </ul>
+                
+                <div><strong>b. Qidian Campaigns (2024.10–2025.05, 7months · Gateway QPS 3K):</strong></div>
+                <ul>
+                    <li>Launched IP merchandise (e.g., physical books, monthly tickets) and user engagement campaigns.</li>
+                    <li><strong>Achievements:</strong>
+                        <ul>
+                            <li>Rebuilt services to support activity triggers, circuit breakers, and rate limiting.</li>
+                            <li>Led large-scale campaigns (e.g., "诸神之战," "大奉打更人") with half the team size, doubling output.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Altima Agency (France)</span>
+                <span class="job-duration">2015–2017 · 2 years</span>
+            </div>
+            <div><em>Full-Stack Developer</em></div>
+            <div>Core Business: Developed websites, mini-programs, and SEO/SEM solutions for clients.</div>
+            <div>Responsibilities: End-to-end development, maintenance, and deployment of frontend/backend systems.</div>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Davyin Information Technology</span>
+                <span class="job-duration">2014–2015 · 1 year</span>
+            </div>
+            <div><em>Drupal Backend Developer</em></div>
+            <div>Core Business: Client website development and maintenance.</div>
+            <div>Achievements: Ranked Top 3 employees.</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Education</h2>
+        <div><strong>Jiangsu University</strong> - Information safety (computer science)</div>
+        <div>2010-2024</div>
+    </div>
+</body>
+</html>
